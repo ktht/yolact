@@ -106,6 +106,12 @@ python eval.py --trained_model=weights/yolact_base_54_800000.pth --score_thresho
 # Run just the raw model on the first 1k images of the validation set
 python eval.py --trained_model=weights/yolact_base_54_800000.pth --benchmark --max_images=1000
 ```
+
+Environment setup before running anything:
+```Shell
+LD_LIBRARY_PATH=$CONDA_PREFIX_1/lib:$LD_LIBRARY_PATH PYTHONPATH=$PWD/external/DCNv2:$PYTHONPATH
+```
+
 ## Images
 ```Shell
 # Display qualitative results on the specified image.
